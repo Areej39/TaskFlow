@@ -29,15 +29,15 @@ TaskFlow is a simple and responsive Todo application built with React, Vite, Fir
 
 ### Signup Page
 
-![Signup](./screenshot1.png)
+![Signup](./screenshot1.jpeg)
 
 ### Login Page
 
-![Login](./screenshot2.png)
+![Login](./screenshot2.jpeg)
 
 ### Home Page
 
-![Home](./screenshot3.png)
+![Home](./screenshot3.jpeg)
 
 ## Project Structure
 
