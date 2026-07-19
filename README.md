@@ -1,16 +1,129 @@
-# React + Vite
+# TaskFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+TaskFlow is a simple and responsive Todo application built with React, Vite, Firebase Authentication, and Cloud Firestore. It allows users to create an account, securely log in, and manage their personal tasks with full CRUD functionality.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- User Authentication with Firebase
+- Secure Signup and Login
+- Protected Routes
+- Add New Tasks
+- Edit Existing Tasks
+- Delete Tasks
+- Mark Tasks as Completed
+- Filter Tasks (All, Pending, Completed)
+- User-specific task storage
+- Responsive UI
+- Coffee-inspired custom theme
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- React Router DOM
+- Firebase Authentication
+- Cloud Firestore
+- Tailwind CSS
 
-## Expanding the Oxlint configuration
+## Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Signup Page
+
+![Signup](./screenshot1.png)
+
+### Login Page
+
+![Login](./screenshot2.png)
+
+### Home Page
+
+![Home](./screenshot3.png)
+
+## Project Structure
+
+```
+src
+│
+├── component
+│   ├── EditModal.jsx
+│   └── TodoCard.jsx
+│
+├── context
+│   └── AuthContext.jsx
+│
+├── pages
+│   ├── Login.jsx
+│   ├── Signup.jsx
+│   └── Home.jsx
+│
+├── firebase.js
+├── App.jsx
+└── main.jsx
+```
+
+## Installation
+
+Clone the repository.
+
+```bash
+git clone https://github.com/Areej39/taskflow.git
+```
+
+Move into the project directory.
+
+```bash
+cd taskflow
+```
+
+Install dependencies.
+
+```bash
+npm install
+```
+
+Start the development server.
+
+```bash
+npm run dev
+```
+
+## Firebase Configuration
+
+Create a Firebase project and enable:
+
+- Firebase Authentication (Email/Password)
+- Cloud Firestore Database
+
+Create a `firebase.js` file and add your Firebase configuration.
+
+## Learning Outcomes
+
+This project helped me understand:
+
+- React Hooks
+- React Router
+- Context API
+- Firebase Authentication
+- Authentication State Management
+- Cloud Firestore CRUD Operations
+- Protected Routes
+- Component-Based Architecture
+- Responsive UI Design with Tailwind CSS
+
+## Future Improvements
+
+- Forgot Password
+- Email Verification
+- Update Email
+- Update Password
+- Delete Account
+- Real-time Firestore updates using `onSnapshot`
+- Toast notifications
+- Search tasks
+- Task categories
+
+## Author
+
+**Areej Fatima**
+
+GitHub: https://github.com/Areej39
